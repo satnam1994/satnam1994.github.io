@@ -1,36 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>My Portfolio - Satnam Singh</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Satnam Singh - Full Stack Developer</title>
   <style>
-    body { font-family: Arial; margin: 40px; }
-    h1 { color: #333; }
-    .project { margin-bottom: 30px; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    header {
+      background: #0a0a23;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.8;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #0a0a23;
+    }
+
+    .services,
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background: #fafafa;
+    }
+
+    footer {
+      background: #0a0a23;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
   </style>
 </head>
+
 <body>
-  <h1>Satnam Singh — Full Stack Developer</h1>
-  <p>I build WordPress, Laravel, Django, Scraping, RAG, API-based and automation applications.</p>
 
-  <h2>Featured Projects</h2>
+  <!-- HERO SECTION -->
+  <header>
+    <h1>Satnam Singh</h1>
+    <p>Full Stack Developer | WordPress | Laravel | Django | Automation | AI | Web Scraping</p>
+  </header>
 
-  <div class="project">
-    <h3>WordPress Event Ticketing System</h3>
-    <p>Custom pricing logic, subscriptions, multilingual setup, API integrations and performance optimization.</p>
-  </div>
+  <!-- ABOUT -->
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am a full stack backend engineer with 7+ years of professional experience. I build digital products,
+      WordPress/WooCommerce systems, SaaS applications, automation tools, scraping solutions, WhatsApp messaging
+      systems, AI-based document parsing, and enterprise-grade web applications.
+    </p>
+  </section>
 
-  <div class="project">
-    <h3>WhatsApp Bulk Messaging System (Flask + API)</h3>
-    <p>Excel-based message automation, queue processing, real-time reporting, and API delivery.</p>
-  </div>
+  <!-- SERVICES -->
+  <section>
+    <h2>My Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>WordPress Development</h3>
+        <p>Elementor, WooCommerce, Multilingual, Custom Integrations</p>
+      </div>
 
-  <div class="project">
-    <h3>LinkedIn Automation & Scraping AI</h3>
-    <p>Automated data extraction, GPT-based screening and CRM integrations for recruitment agencies.</p>
-  </div>
+      <div class="card">
+        <h3>Laravel / PHP Backend</h3>
+        <p>API Design, Dashboards, Authentication, Subscription, Payments</p>
+      </div>
 
-  <h2>Contact</h2>
-  <p>Email: satnamsingh521994@gmail.com</p>
-  <p>WhatsApp: +91-7018127939</p>
+      <div class="card">
+        <h3>Web Scraping & Automation</h3>
+        <p>LinkedIn scraping, recruitment automation, data extraction & enrichment</p>
+      </div>
+
+      <div class="card">
+        <h3>AI Apps & RAG</h3>
+        <p>PDF/Video processing, transcription, embeddings, chatbot systems</p>
+      </div>
+
+      <div class="card">
+        <h3>WhatsApp Messaging System</h3>
+        <p>Bulk messaging via Excel, campaign tracking, API integration</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <h2>Featured Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>LinkedIn Recruiting Automation</h3>
+        <p>Extracts & filters profiles, screens via GPT, sends to Google Sheets & CRM</p>
+      </div>
+
+      <div class="card">
+        <h3>WooCommerce Subscription Portal</h3>
+        <p>Custom membership, multiple ticket pricing, OTT-style UI</p>
+      </div>
+
+      <div class="card">
+        <h3>WhatsApp Bulk Sender (Flask)</h3>
+        <p>Excel upload → queued delivery → API messaging → analytics dashboard</p>
+      </div>
+
+      <div class="card">
+        <h3>AI Transcript Extraction</h3>
+        <p>Processes PDF/audio/video into searchable embeddings for Q&A</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2>Contact</h2>
+    <p style="text-align:center;">
+      📧 Email: satnamsingh521994@gmail.com <br /><br />
+      📱 WhatsApp: +91-7018127939
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Satnam Singh | <a href="#">Hire Me</a></p>
+  </footer>
+
 </body>
+
 </html>
